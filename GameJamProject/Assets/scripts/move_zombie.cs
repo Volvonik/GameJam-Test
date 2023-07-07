@@ -4,24 +4,20 @@ using UnityEngine;
 
 public class move_zombie : MonoBehaviour
 {
-    public GameObject player;
-    public float blocksize = 48f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject controlledPlayer;
 
-    // Update is called once per frame
+    float tileWidth = 1f;
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.S))
         {
-            player.transform.position -= transform.position + new Vector3(0, blocksize, 0);
+            controlledPlayer.transform.Translate(0, -tileWidth, 0);
         }
+
         if (Input.GetKeyDown(KeyCode.W))
         {
-            player.transform.position += transform.position + new Vector3(0, blocksize, 0);
+            controlledPlayer.transform.Translate(0, tileWidth, 0);
         }
     }
 }
