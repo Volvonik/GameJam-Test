@@ -5,7 +5,7 @@ using UnityEngine;
 public class move_zombie : MonoBehaviour
 {
     public GameObject player;
-    public float blocksize;
+    public float blocksize = 48f;
     // Start is called before the first frame update
     void Start()
     {
