@@ -15,4 +15,15 @@ public class LogicScript : MonoBehaviour
     {
         
     }
+    bool IsDying(Vector2 position,Vector2 enemyPosition, int distance){
+        //position is plant position and enemy position is the zombie position, distance is how many blocks away to mesure      
+        if (position.x +48*distance == enemyPosition.x){
+            return true;
+            //the zombie is one block away from the plant
+        }
+        else{
+            return false;
+            //the zombie is one block away from the plant
+        }
+    }
 }
