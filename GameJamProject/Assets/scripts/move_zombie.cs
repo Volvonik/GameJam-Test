@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class move_zombie : MonoBehaviour
 {
+    public GameObject player;
+    public float blocksize;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,13 @@ public class move_zombie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.S))
+        {
+            player.transform.position -= transform.position + new Vector3(0, blocksize, 0);
+        }
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            player.transform.position += transform.position + new Vector3(0, blocksize, 0);
+        }
     }
 }
