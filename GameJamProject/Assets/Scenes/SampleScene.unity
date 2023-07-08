@@ -609,7 +609,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -922,6 +922,7 @@ GameObject:
   - component: {fileID: 1026007619}
   - component: {fileID: 1026007618}
   - component: {fileID: 1026007617}
+  - component: {fileID: 1026007620}
   m_Layer: 0
   m_Name: GreenPlant
   m_TagString: GreenPlant
@@ -961,8 +962,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.7, y: 0.9}
+  m_Offset: {x: -0.0054368973, y: -0.03291428}
+  m_Size: {x: 0.7978649, y: 0.96582866}
   m_Direction: 0
 --- !u!212 &1026007618
 SpriteRenderer:
@@ -1005,7 +1006,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 1d0fec9531329104a9dc76c991957264, type: 3}
+  m_Sprite: {fileID: 1262368099, guid: 9d43a590e1d42ea4cb282dbf04371aa7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1031,6 +1032,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1026007620
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026007616}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8594fb599b7d5354b9528d66b6ccbb22, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1267864956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,6 +1064,7 @@ GameObject:
   - component: {fileID: 1267864957}
   - component: {fileID: 1267864959}
   - component: {fileID: 1267864958}
+  - component: {fileID: 1267864960}
   m_Layer: 0
   m_Name: Tilemap_layer-1
   m_TagString: Untagged
@@ -1335,6 +1358,27 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!95 &1267864960
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267864956}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b85a31aac6a9202449a6fd036941f286, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1376393423
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,7 +1476,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 4925a68c2c5f116448d96d493584c726, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
